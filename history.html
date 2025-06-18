@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculation History</title>
+  </head>
+  <body>
+    <h1>Calculation History (Last 10)</h1>
+    <ul>
+      {% for row in rows %}
+      <li>{{ row[0] }} {{ row[1] }} {{ row[2] }} = {{ row[3] }}</li>
+      {% endfor %}
+    </ul>
+    <a href="/">Back to Calculator</a>
+  </body>
+</html>
